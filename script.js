@@ -22,14 +22,16 @@ let count = 0 ;
 boxes.forEach((box)=>{
     box.addEventListener("click" ,()=>{
         
-      console.log(++count);
+      // console.log(++count);
        if(turnX)
        {
          box.innerText = "X";
+         box.style.color = "red"
          turnX=false;
        }
        else{
          box.innerText = "O";
+         box.style.color = "orange"
          turnX=true;
        }
        box.disabled =true;
