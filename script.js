@@ -41,6 +41,7 @@ const resetBtn = ()=>{
   turnX = true;
   enableboxes();
   msgContainer.classList.add("hide");
+  count = 0 ;
 
 }
 
@@ -66,7 +67,7 @@ const draw = () => {
   msg.innerText = `It's a Draw`;
   msgContainer.classList.remove("hide");
   disableboxes();
-  count === 0 ;
+  count = 0 ;
 }
 
 const checkWinner = () => {
