@@ -22,7 +22,7 @@ let count = 0 ;
 boxes.forEach((box)=>{
     box.addEventListener("click" ,()=>{
         
-      // console.log(++count);
+        ++count;
        if(turnX)
        {
          box.innerText = "X";
